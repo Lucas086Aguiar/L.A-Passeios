@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+/*configuraçoes do body */
+body{
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+/* configuraçoes da navbar */
+.navbar {
+display: flex; /*deixa tudo alinha de lado*/
+flex-flow: row wrap;
+height: 100px;
+background-image: linear-gradient(180deg,white,black); /*cria um degrade no background*/
+justify-content: center; /*deixa a navbar no centro do site*/
+align-items: center; /*deixa os textos do menu no centro*/
+border: 1px solid red;
+}
+
+/*configuração da img da navbar*/
+.logo{
+    height: 100%;
+    flex: 20%;
+    margin-left: 10%;/*distancia da img para o lado esquerdo do site*/
+    text-align: left;/*posição da img no lado esquerdo*/
+    border: 1px solid red;
+}
+.logo img{
+    height: 100px;
+    width: 100px;
+}
