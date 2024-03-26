@@ -17,7 +17,7 @@ height: 100px;
 background-color: aliceblue; /*cor do fundo do site*/
 justify-content: center; /*deixa a navbar no centro do site*/
 align-items: center; /*deixa os textos do menu no centro,VERTICAL*/
-/*border: 1px solid red;*/
+border: 1px solid red;
 }
 
 /*configuração da img da navbar*/
@@ -26,7 +26,7 @@ align-items: center; /*deixa os textos do menu no centro,VERTICAL*/
     flex: 20%;
     margin-left: 10%;/*distancia da img para o canto esquerdo do site*/
     text-align: left;/*posição da img no lado esquerdo*/
-    /*border: 1px solid rebeccapurple*/;
+    border: 1px solid rebeccapurple;
 }
 
 /* configuçoes da img*/
@@ -38,7 +38,7 @@ align-items: center; /*deixa os textos do menu no centro,VERTICAL*/
 /*configuraçoes do menu*/
 .menu{
     flex: 60%; /*tamanho ocupado pela div menu */
-    /*border: 1px solid green; /*borda de orientação*/*/
+    border: 1px solid green; /*borda de orientação*/
     text-align: center; /*posiçao do texto no navbar*/
     margin-right: 10%; /*distancia da div menu para o canto direito do site*/
     padding: 20px; /*altura da div do menu */
