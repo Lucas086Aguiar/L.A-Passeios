@@ -1,20 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');/*link da fonte do google fontes*/
 * {
     box-sizing: border-box; /*encorpora margin e pading tudo dentro de uma caixa*/
+    margin: 0%;
+    padding: 0%;
 }
 /*configuraçoes do body */
 body{
     margin: 0%;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
+    /* background-color: black; */
 }
 
 /* configuraçoes da navbar */
 .navbar {
 display: flex; /*deixa tudo em linha, lado a lado*/
-flex-flow: row wrap; /*  */
+flex-flow: row wrap; /* */
 height: 100px;
-background-color: aliceblue; /*cor do fundo do site*/
+background-color:  #7d919a; /*cor do fundo do site*/
 justify-content: center; /*deixa a navbar no centro do site*/
 align-items: center; /*deixa os textos do menu no centro,VERTICAL*/
 /* border: 1px solid red; */
@@ -26,6 +28,8 @@ align-items: center; /*deixa os textos do menu no centro,VERTICAL*/
     margin-left: 10%;/*distancia da img para o canto esquerdo do site*/
     text-align: left;/*posição da img no lado esquerdo*/
     /* border: 1px solid rebeccapurple; */
+    max-width: 180px;
+    
 }
 
 /* configuçoes da img*/
@@ -36,33 +40,33 @@ align-items: center; /*deixa os textos do menu no centro,VERTICAL*/
 
 /*configuraçoes do menu*/
 .menu{
-    flex: 60%; /*tamanho ocupado pela div menu */
-    /*border: 1px solid green;*/ /*borda de orientação*/
+    flex: 50%; /*tamanho ocupado pela div menu */
+    /*border: 1px solid green;*/ /*borda de orientação
     text-align: center; /*posiçao do texto no navbar*/
-    margin-right: 10%; /*distancia da div menu para o canto direito do site*/
-    padding: 20px; /*altura da div do menu */
+    /*margin-right: 10%; /*distancia da div menu para o canto direito do site*/
+    padding: 20px ; /*altura da div do menu */
     font-family: Lobster; /*estilo da fonte*/
 }
 
 /*estilização dos linkes do menu */
 .menu a{
-    color: #6D593D;/*cor do texto do menu*/
+    color: white;/*cor do texto do menu*/
     text-decoration: none;/*tirando o sublinhado que fica de baixo do menu*/
     font-size: 20px; /*tamanho da texto do menu*/
-    padding: 25px 20px;/* 20 de altura por 15 largura*/
+    padding: 25px 70px;/* 20 de altura por 15 largura*/
 }
 
 /*quando o mouse tiver sobre o menu*/
 .menu a:hover{
-    color: #ff2978; /*cor do menu quando o mouse passa por cima*/
-    border-top: 4px solid #180f4a;/*borda no topo do menu de 4px solida da cor azul */
+    color: #364b52; /*cor do menu quando o mouse passa por cima*/
+    border-top: 4px solid white;/*borda no topo do menu de 4px solida da cor azul */
 }
 
 /*estilização do botão pacotes*/
 #botao{
-    background-color: #180f4a;/*cor do fundo do botão pacotes*/
+    background-color: #364b52;/*cor do fundo do botão pacotes*/
     padding: 10px 25px;/* altura e largura do botao pacotes*/
-    color: #6D593D; /*cor da fonte pacotes*/
+    color: white; /*cor da fonte pacotes*/
     border-radius: 5px;/* borda no botao pacotes*/
     margin-left: 5%;/*afastando o botao pacotes em 5% dos outros do menu*/
 }
@@ -70,8 +74,14 @@ align-items: center; /*deixa os textos do menu no centro,VERTICAL*/
 /*o que acontece quando passa o mouse por cima do botao pacotes*/
 #botao:hover{
     border: none;/*tirando a borda qeu fica na parte de cima do botão pacotes*/
-    background: #ff2978; /*cor do botão hover*/
-    color: #180f4a; /*cor da letra do botao pacotes usando o hover*/
+    background: white; /*cor do botão hover*/
+    color: #364b52; /*cor da letra do botao pacotes usando o hover*/
+}
+.img-navbar{
+    flex: 10%;
+    text-align: center;
+    /* border: 4px solid red; */
+    margin-right: 10%;
 }
 
 /*tudo que vai no header vai começar a partir desse daqui*/
@@ -79,8 +89,8 @@ align-items: center; /*deixa os textos do menu no centro,VERTICAL*/
 .header{
     display: flex; /*tudo vai se alinha em linha ou horizontal*/
     flex-wrap: row wrap;/* divisão de blobos por linha*/
-    height: 600px;/*altura do do header de 600px*/
-    background: aliceblue; /*cor do fundo do header*/
+    /*height: 600px;/*altura do do header de 600px*/
+    background: #dfddda; /*cor do fundo do header*/
     
 }
 .img-headline{
@@ -88,4 +98,9 @@ align-items: center; /*deixa os textos do menu no centro,VERTICAL*/
     margin-right: 10%; /*distancia do lado direito da img-headline pro canto do site*/
     flex: 80%; /*tamanho do resto da img-headline*/
     /* border: 4px solid red; */
+    background-image: url(/img/img\ inicial.jpeg);
+    height: 980px;
+    background-repeat: none;
+    background-size: 100%;
+    position: relative;
 }
