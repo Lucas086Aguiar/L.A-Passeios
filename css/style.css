@@ -1,11 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');/*link da fonte do google fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*link da fonte do google fontes*/
 * {
-    box-sizing: border-box; /*encorpora margin e pading tudo dentro de uma caixa*/
+    box-sizing: border-box;
+    /*encorpora margin e pading tudo dentro de uma caixa*/
     margin: 0%;
     padding: 0%;
 }
+
 /*configuraçoes do body */
-body{
+body {
     margin: 0%;
     font-family: Arial, Helvetica, sans-serif;
     /* background-color: black; */
@@ -14,75 +20,104 @@ body{
 /* configuraçoes da navbar */
 .navbar {
 
-display: flex; /*deixa tudo em linha, lado a lado*/
-flex-flow: row wrap; /* */
-height: auto;
-background-color:  #7d919a; /* cor do fundo do site */
-justify-content: center; /* deixa a navbar no centro do site */
-align-items: center; /*deixa os textos do menu no centro,VERTICAL*/
-/* border: 1px solid red; */
-border-bottom-left-radius: 15px;
-border-bottom-right-radius: 15px;
+    display: flex;
+    /*deixa tudo em linha, lado a lado*/
+    flex-flow: row wrap;
+    /* */
+    height: auto;
+    background-color: #7d919a;
+    /* cor do fundo do site */
+    justify-content: center;
+    /* deixa a navbar no centro do site */
+    align-items: center;
+    /*deixa os textos do menu no centro,VERTICAL*/
+    /* border: 1px solid red; */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 /*configuração da img da navbar*/
-.logo{
-    flex: 20%; /**/
-    margin-left: 10%;/*distancia da img para o canto esquerdo do site*/
-    text-align: left;/*posição da img no lado esquerdo*/
+.logo {
+    flex: 20%;
+    /**/
+    margin-left: 10%;
+    /*distancia da img para o canto esquerdo do site*/
+    text-align: left;
+    /*posição da img no lado esquerdo*/
     /* border: 1px solid rebeccapurple; */
     max-width: 180px;
-    
+
 }
 
 /* configuçoes da img*/
-.logo img{
-    height: 100px; /*altura da img do logo da navbar*/
-    width: 100px; /*largura da img da navbar*/
+.logo img {
+    height: 100px;
+    /*altura da img do logo da navbar*/
+    width: 100px;
+    /*largura da img da navbar*/
 }
 
 /*configuraçoes do menu*/
-.menu{
-    flex: 50%; /*tamanho ocupado pela div menu */
-    /*border: 1px solid green;*/ /*borda de orientação */
-    padding: 20px ; /*altura da div do menu */
-    font-family: Lobster; /*estilo da fonte*/
+.menu {
+    flex: 50%;
+    /*tamanho ocupado pela div menu */
+    /*border: 1px solid green;*/
+    /*borda de orientação */
+    padding: 20px;
+    /*altura da div do menu */
+    font-family: Lobster;
+    /*estilo da fonte*/
 }
 
 /*estilização dos linkes do menu */
-.menu a{
-    color: white;/*cor do texto do menu*/
-    text-decoration: none;/*tirando o sublinhado que fica de baixo do menu*/
-    font-size: 20px; /*tamanho da texto do menu*/
-    padding: 25px 70px;/* 20 de altura por 15 largura*/
+.menu a {
+    color: white;
+    /*cor do texto do menu*/
+    text-decoration: none;
+    /*tirando o sublinhado que fica de baixo do menu*/
+    font-size: 20px;
+    /*tamanho da texto do menu*/
+    padding: 25px 70px;
+    /* 20 de altura por 15 largura*/
     transition: 0.3s;
 }
 
 /*quando o mouse tiver sobre o menu*/
-.menu a:hover{
-    color: #364b52; /*cor do menu quando o mouse passa por cima*/
-    border-top: 4px solid white;/*borda no topo do menu de 4px solida da cor azul */
+.menu a:hover {
+    color: #364b52;
+    /*cor do menu quando o mouse passa por cima*/
+    border-top: 4px solid white;
+    /*borda no topo do menu de 4px solida da cor azul */
     transition: 0.3s;
 }
 
 /*estilização do botão pacotes*/
-#botao{
-    background-color: #364b52;/*cor do fundo do botão pacotes*/
-    padding: 10px 25px;/* altura e largura do botao pacotes*/
-    color: white; /*cor da fonte pacotes*/
-    border-radius: 5px;/* borda no botao pacotes*/
-    margin-left: 5%;/*afastando o botao pacotes em 5% dos outros do menu*/
+#botao {
+    background-color: #364b52;
+    /*cor do fundo do botão pacotes*/
+    padding: 10px 25px;
+    /* altura e largura do botao pacotes*/
+    color: white;
+    /*cor da fonte pacotes*/
+    border-radius: 5px;
+    /* borda no botao pacotes*/
+    margin-left: 5%;
+    /*afastando o botao pacotes em 5% dos outros do menu*/
     transition: 0.5s;
 }
 
 /*o que acontece quando passa o mouse por cima do botao pacotes*/
-#botao:hover{
-    border: none;/*tirando a borda qeu fica na parte de cima do botão pacotes*/
-    background: white; /*cor do botão hover*/
-    color: #364b52; /*cor da letra do botao pacotes usando o hover*/
+#botao:hover {
+    border: none;
+    /*tirando a borda qeu fica na parte de cima do botão pacotes*/
+    background: white;
+    /*cor do botão hover*/
+    color: #364b52;
+    /*cor da letra do botao pacotes usando o hover*/
     transition: 0.5;
 }
-.img-navbar{
+
+.img-navbar {
     flex: 10%;
     text-align: center;
     /* border: 4px solid red; */
@@ -101,7 +136,7 @@ header {
 }
 
 
-.img-header{
+.img-header {
     display: flex;
     flex-flow: row wrap;
     /* border: 4px solid red; */
@@ -112,6 +147,7 @@ header {
     width: 100%;
     height: auto;
     border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 /*cards de viajens do site*/
@@ -119,7 +155,7 @@ header {
     display: flex;
     justify-content: center;
     margin-left: 10%;
-    margin-right: 10%; 
+    margin-right: 10%;
 }
 
 .card {
@@ -135,9 +171,12 @@ header {
 }
 
 .card>img {
-    width: 100%; /* tamanho da img */
-    border-top-left-radius: 10px; /* borda na parte superior da esquerda */
-    border-top-right-radius: 10px; /* borda na parte superior da direita */
+    width: 100%;
+    /* tamanho da img */
+    border-top-left-radius: 10px;
+    /* borda na parte superior da esquerda */
+    border-top-right-radius: 10px;
+    /* borda na parte superior da direita */
 }
 
 .card h1 {
@@ -168,36 +207,70 @@ header {
     color: #364b52;
 }
 
-/**/
+/*parte da main com imagens e texto sobre o site de passeio*/
 
 main {
-    display: inline-block;
-    flex-direction: row ;
-    margin-top: 30px ;
-    border: 4px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    /* border: 4px solid red; */
     margin-left: 10%;
     margin-right: 10%;
-    height: 500px;
+    height: auto;
+    width: 80%;
 }
 
-h2 {
-    font-size: 56px;
-    line-height: 10px;
+/* grupo com as configuracoes de imagens e textos da dive grupo que esta dentro da main*/
+
+.grupo {
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* configuracoes das dives aside e actitle*/
+
+aside {
+    width: 50%;
     text-align: center;
-    
+    height: 700px;
 }
 
-p{
-    line-height: 20px;
-    max-width: 500px;
-    text-align: center;
-    
+article {
+    width: 50%;
 }
 
-.article img {
-    width: 550px;
-    padding: 100px;
-    border-radius: 15px;
-    border: none;
+
+.grupo {
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
 }
 
+.grupo h2 {
+    margin-top: 5%;
+    font-family: Mochiy Pop One;
+}
+
+.grupo p {
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    font-family: Poppins;
+}
+
+.grupo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+}
+
+footer {
+    display: flex;
+    border: 4px solid red;
+    padding: 250px;
+    background-color: #364b52;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
