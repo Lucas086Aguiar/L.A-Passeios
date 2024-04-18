@@ -153,7 +153,7 @@
         grid-row: 1;
         position: absolute;
         z-index: 1;
-        top: 190px;
+        top: 25vh;
         margin-left: 15px;
         width: 79%;
         font-family: Abril fatface;
@@ -540,7 +540,7 @@ header {
     grid-row: 1;
     position: absolute;
     z-index: 1;
-    top: 150px;
+    top: 37vh;
     margin-left: 15px;
     width: 79%;
     font-family: Abril fatface;
