@@ -33,7 +33,7 @@
         justify-content: center;
         align-items: center;
         /* border: 1px solid red; */
-        
+
 
     }
 
@@ -474,383 +474,383 @@
 
     /*-----------------------responsivo------------------------- */
 
-@media screen and (max-width: 414px){
-    .menu {
-        display: none;
-        border: 2px solid red;
+    @media screen and (max-width: 414px) {
+        .menu {
+            display: none;
+            border: 2px solid red;
+        }
+
+        /* configuraçoes da div principal NAVBAR */
+
+        .navbar {
+            display: flex;
+            flex-flow: row wrap;
+            height: 100px;
+            background-color: #7d919a;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        /*configuração da div logo que ta na navbar*/
+
+        .logo {
+            width: 50%;
+            height: auto;
+            display: flex;
+            margin-left: 10%;
+
+        }
+
+        /* configuçoes da imagem que ta na div logo*/
+
+        .logo img {
+            max-width: 45%;
+
+        }
+
+        .img-navbar {
+            flex: 10%;
+            text-align: center;
+            margin-right: 10%;
+        }
+
+        header {
+            display: flex;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        .img-header {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            /*border: 4px solid red;*/
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            height: 300px;
+            position: relative;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+        }
+
+        .texto {
+            grid-row: 1;
+            position: absolute;
+            z-index: 1;
+            top: 37vh;
+            margin-left: 15px;
+            width: 79%;
+            font-family: Abril fatface;
+
+        }
+
+        /**/
+
+        .texto>h1 {
+            font-size: 20px;
+            color: #6D593D;
+
+            /**/
+
+        }
+
+        .texto>h2 {
+            font-size: 10px;
+            color: #6D593D;
+
+        }
+
+        /*cards de viajens do site*/
+
+        .cards {
+            display: flex;
+            width: 96%;
+            height: 150px;
+            grid-row: 2/2;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+        }
+
+        /*modificacoes de todos os cards*/
+
+        .card {
+            width: 80px;
+            height: 130px;
+            text-align: center;
+            color: #202020;
+            border-radius: 10px;
+            background-color: #fffafa7c;
+            margin-bottom: 15px;
+            transition: 0.5s;
+
+        }
+
+        /*config da imagens de todos os cards*/
+
+        .card>img {
+            height: 50px;
+            width: 100%;
+            border-radius: 10%;
+        }
+
+        /*config de texto h1 de todos os cards*/
+
+        .card h1 {
+            width: auto;
+            height: auto;
+            align-items: center;
+            justify-content: center;
+            font-size: 7px;
+            color: #6D593D;
+            padding: 5px;
+            margin-top: 10px;
+
+        }
+
+        /* adicionando efeito hover nos cards */
+
+        .card:hover {
+            width: 90px;
+            height: 140px;
+            transition: 0.5s;
+
+        }
+
+        /* config de todos os botoes dos cardes*/
+
+        .btn {
+            font-size: 6px;
+            padding: 0.5vw 0.5vw;
+            border: none;
+            background-color: #364b52;
+            color: #fff;
+            border-radius: 10px;
+            justify-content: center;
+            padding: 10px;
+            transition: 0.5s;
+            cursor: pointer;
+            margin-top: 10px;
+
+        }
+
+        /* efeitos nos botoes das divs card*/
+
+        .btn:hover {
+            transition: 0.5s;
+            background-color: #fff;
+            color: #364b52;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            /*border: 4px solid red;*/
+            margin-left: 10%;
+            margin-right: 10%;
+            height: 1000px;
+            width: 80%;
+        }
+
+        /* configuracoes das dives aside e actitle*/
+
+        aside {
+            max-width: 50%;
+            text-align: center;
+            height: 32vw;
+
+        }
+
+        article {
+            width: 50%;
+
+        }
+
+        /*config da div GRUPO que esta dentro da MAIN*/
+
+        .grupo {
+            border-radius: 10px;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            display: flex;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+        }
+
+        /* config do h2 da div GRUPO*/
+
+        .grupo h2 {
+            padding: 10px;
+            font-size: 15px;
+            font-family: Mochiy Pop One;
+        }
+
+        /* config do P da div GRUPO*/
+
+        .grupo p {
+            text-align: justify;
+            padding: 10px;
+            font-family: Poppins;
+            font-size: 4px;
+            height: auto;
+
+        }
+
+        /* config dA imagem da div GRUPO*/
+
+        .grupo img {
+            width: 100%;
+            height: 100%;
+            border-radius: 2%;
+        }
+
+
+        footer {
+            height: auto;
+            display: block;
+            background-color: #364b52;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+
+            /*config do rodape geral da div rodape*/
+
+            .rodape {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 500px;
+
+            }
+
+            /* config das divs com imagem texto sobre site*/
+
+            .rodape1 {
+                width: 100%;
+                height: 200px;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .rodape1 img {
+                max-width: 10%;
+                border-radius: 10px;
+
+
+            }
+
+            .rodape1 p {
+                text-align: justify;
+                font-size: 9px;
+                padding: 1px;
+                margin-top: 3%;
+
+            }
+
+            /*config das divs CONTATOS*/
+
+            .rodape2 {
+                display: block;
+                width: 100%;
+                height: 200px;
+
+            }
+
+            .rodape2 h2 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                font-size: 30px;
+                height: 20px;
+                margin-bottom: 5%;
+
+            }
+
+            /* config da div RODAPE-ICON*/
+
+            .rodape-icon {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 100px;
+                max-width: 50vh;
+                padding: 10px;
+
+
+            }
+
+            /* config da div ICON*/
+
+            .icon {
+                display: flex;
+
+
+            }
+
+            /* config da imagem da div ICON*/
+
+            .rodape-icon img {
+                max-width: 10%;
+
+            }
+
+            /* config do p da div ICON*/
+            .rodape-icon p {
+                font-size: 12px;
+            }
+
+            /* config da divs siganos*/
+
+            .rodape3 {
+                display: block;
+                width: 100%;
+                height: 200px;
+
+            }
+
+            .rodape3 h2 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 50px;
+                font-size: 30px;
+                margin-top: 10%;
+
+            }
+
+            .redes-sociais {
+                display: flex;
+                text-align: center;
+                align-items: center;
+                width: 100%;
+                height: 140px;
+                padding: 10px;
+
+            }
+
+
+            /*confg da img*/
+
+            .rodape3 img {
+                align-items: center;
+                max-width: 50%;
+
+            }
+
+            /*confg da div do fundo do footer*/
+
+            .rodape-fundo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                background-color: black;
+                color: white;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                font-size: 10px;
+            }
+        }
     }
-
-   /* configuraçoes da div principal NAVBAR */
-
-   .navbar {
-    display: flex;
-    flex-flow: row wrap;
-    height: 100px;
-    background-color: #7d919a;
-    justify-content: center;
-    align-items: center;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-
-}
-
-/*configuração da div logo que ta na navbar*/
-
-.logo {
-    width: 50%;
-    height: auto;
-    display: flex;
-    margin-left: 10%;
-
-}
-
-/* configuçoes da imagem que ta na div logo*/
-
-.logo img {
-    max-width: 45%;
-
-}
-
-.img-navbar {
-    flex: 10%;
-    text-align: center;
-    margin-right: 10%;
-}
-
-header {
-    display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.img-header {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    /*border: 4px solid red;*/
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    height: 300px;
-    position: relative;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-
-}
-
-.texto {
-    grid-row: 1;
-    position: absolute;
-    z-index: 1;
-    top: 37vh;
-    margin-left: 15px;
-    width: 79%;
-    font-family: Abril fatface;
-
-}
-
-/**/
-
-.texto>h1 {
-    font-size: 20px;
-    color: #6D593D;
-
-    /**/
-
-}
-
-.texto>h2 {
-    font-size: 10px;
-    color: #6D593D;
-
-}
-
- /*cards de viajens do site*/
-
- .cards {
-    display: flex;
-    width: 96%;
-    height: 150px;
-    grid-row: 2/2;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-
-}
-
-/*modificacoes de todos os cards*/
-
-.card {
-    width: 80px;
-    height: 130px;
-    text-align: center;
-    color: #202020;
-    border-radius: 10px;
-    background-color: #fffafa7c;
-    margin-bottom: 15px;
-    transition: 0.5s;
-
-}
-
-/*config da imagens de todos os cards*/
-
-.card>img {
-    height: 50px;
-    width: 100%;
-    border-radius: 10%;
-}
-
-/*config de texto h1 de todos os cards*/
-
-.card h1 {
-    width: auto;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-    font-size: 7px;
-    color: #6D593D;
-    padding: 5px;
-    margin-top: 10px;
-
-}
-
-/* adicionando efeito hover nos cards */
-
-.card:hover { 
-    width: 90px;
-    height: 140px; 
-    transition: 0.5s; 
-
-} 
-
-/* config de todos os botoes dos cardes*/
-
-.btn {
-    font-size: 6px;
-    padding: 0.5vw 0.5vw;
-    border: none;
-    background-color: #364b52;
-    color: #fff;
-    border-radius: 10px;
-    justify-content: center;
-    padding: 10px;
-    transition: 0.5s;
-    cursor: pointer;
-    margin-top: 10px;
-
-}
-
-/* efeitos nos botoes das divs card*/
-
-.btn:hover {
-    transition: 0.5s;
-    background-color: #fff;
-    color: #364b52;
-}
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 30px;
-    /*border: 4px solid red;*/
-    margin-left: 10%;
-    margin-right: 10%;
-    height: 1000px;
-    width: 80%;
-}
-
-/* configuracoes das dives aside e actitle*/
-
-aside {
-    max-width: 50%;
-    text-align: center;
-    height: 32vw;
-
-}
-
-article {
-    width: 50%;
-
-}
-
-/*config da div GRUPO que esta dentro da MAIN*/
-
-.grupo {
-    border-radius: 10px;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    display: flex;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-
-}
-
-/* config do h2 da div GRUPO*/
-
-.grupo h2 {
-    padding: 10px;
-    font-size: 15px;
-    font-family: Mochiy Pop One;
-}
-
-/* config do P da div GRUPO*/
-
-.grupo p {
-    text-align: justify;
-    padding: 10px;
-    font-family: Poppins;
-    font-size: 4px;
-    height: auto;
-
-}
-
-/* config dA imagem da div GRUPO*/
-
-.grupo img {
-    width: 100%;
-    height: 100%;
-    border-radius: 2%;
-}
-
-
-footer {
-    height: auto;
-    display: block;
-    background-color: #364b52;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-
-/*config do rodape geral da div rodape*/
-
-.rodape {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 500px;
-   
-}
-
-/* config das divs com imagem texto sobre site*/
-
-.rodape1 {
-    width: 100%;
-    height: 200px;
-    padding: 20px;
-    text-align: center;
-}
-
-.rodape1 img {
-    max-width: 10%;
-    border-radius: 10px;
-
-
-}
-
-.rodape1 p {
-    text-align: justify;
-    font-size: 9px;
-    padding: 1px;
-    margin-top: 3%;
-
-}
-
-/*config das divs CONTATOS*/
-
-.rodape2 {
-    display: block;
-    width: 100%;
-    height: 200px;
-
-}
-
-.rodape2 h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    font-size: 30px;
-    height: 20px;
-    margin-bottom: 5%;
-
-}
-/* config da div RODAPE-ICON*/
-
-.rodape-icon {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100px;
-    max-width: 50vh;
-    padding: 10px;
-
-    
-}
-
-/* config da div ICON*/
-
-.icon {
-    display: flex;
-    
-
-}
-
-/* config da imagem da div ICON*/
-
-.rodape-icon img {
-    max-width: 10%;
-    
-}
-
-/* config do p da div ICON*/
-.rodape-icon p {
-    font-size: 12px;
-}
-
-/* config da divs siganos*/
-
-.rodape3 {
-    display: block;
-    width: 100%;
-    height: 200px;
-
-}
-
-.rodape3 h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 50px;
-    font-size: 30px;
-    margin-top: 10%;
-
-}
-
-.redes-sociais {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    width: 100%;
-    height: 140px;
-    padding: 10px;
-
-}
-
-
-/*confg da img*/
-
-.rodape3 img {
-    align-items: center;
-    max-width: 50%;
-
-}
-
-/*confg da div do fundo do footer*/
-
-.rodape-fundo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    background-color: black;
-    color: white;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    font-size: 10px;
-}
-}
