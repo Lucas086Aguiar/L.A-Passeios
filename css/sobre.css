@@ -58,7 +58,7 @@ main{
     margin-bottom: 40px;
     font-family: Libre Baskerville
     ;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .texto-grupo p{
@@ -108,9 +108,7 @@ section{
     height: 600px;
     margin-left: 10%;
     margin-right: 10%;
-    
-    
-   
+    margin-top: 10%;
  }
 
 h2{
@@ -120,17 +118,17 @@ h2{
     ;
     font-size: 50px;
     background-color: white;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     
 }
 
 .empresas {
     display: inline-block;
     padding: 50px;
-    height: 800px;
+    height: 700px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     background-color: #eeeff1;
-    border-radius: 5p;
+    border-radius: 5px;
 }
 
 .grupo-empresas {
