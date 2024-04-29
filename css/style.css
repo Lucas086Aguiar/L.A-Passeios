@@ -306,7 +306,7 @@
     .grupo h2 {
         padding: 20px;
         font-family: Mochiy Pop One;
-        
+
     }
 
     /* config do P da div GRUPO*/
@@ -315,14 +315,6 @@
         text-align: justify;
         padding: 20px;
         font-family: Poppins;
-<<<<<<< HEAD
-       
-=======
-        font-size: 0.8vw;
-        height: 300px;
-        line-height: 29px;
->>>>>>> 2869252db4c57721750c26890a25f00fa609da10
-
     }
 
     /* config dA imagem da div GRUPO*/
@@ -483,20 +475,69 @@
 
     /*-----------------------responsivo------------------------- */
 
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 768px) {
+        
         .menu {
-            display: none;
-            border: 2px solid red;
+            display: flex;
+            align-items: center;
+            flex: 50%;
+            /*border: 1px solid green;*/
+            font-family: Lobster;
+            
+    
+        }
+    
+        /*config de cada item que ta dentro da viv MENU */
+    
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 7px;
+
+    
+        }
+    
+        /*quando o mouse tiver sobre os itens do menu*/
+    
+        .menu a:hover {
+            color: #364b52;
+            border-top: 2px solid white;
+            transition: 0.5ms;
+    
+        }
+    
+        /*estilização do botão pacotes*/
+    
+        #botao {
+            display: flex;
+            height: 10px;
+            align-items: center;
+            background-color: #364b52;
+            color: white;
+            border-radius: 10px;
+            transition: 0.5s;
+    
+        }
+    
+        /*o que acontece quando passa o mouse por cima do botao pacotes*/
+    
+        #botao:hover {
+            border: none;
+            background: white;
+            color: #364b52;
+            transition: 0.5s;
+    
         }
 
         /* configuraçoes da div principal NAVBAR */
 
         .navbar {
             display: flex;
-            flex-flow: row wrap;
-            height: 100px;
+            flex-wrap: row wrap;
+            height: 70px;
+            width: 100%;
             background-color: #7d919a;
-            justify-content: center;
+            justify-content: right;
             align-items: center;
 
         }
@@ -504,24 +545,31 @@
         /*configuração da div logo que ta na navbar*/
 
         .logo {
-            width: 50%;
-            height: auto;
+            float: left;
+            width: 10%;
+            height: 50px;
             display: flex;
-            margin-left: 10%;
 
         }
 
         /* configuçoes da imagem que ta na div logo*/
 
         .logo img {
-            max-width: 45%;
+            max-width: 100%;
+            
 
         }
 
         .img-navbar {
-            flex: 10%;
-            text-align: center;
-            margin-right: 10%;
+            width: 10%;
+            height: 50px;
+
+        }
+
+        .img-navbar img{
+
+            width: 100%;
+            height: 50px;
         }
 
         header {
@@ -559,9 +607,7 @@
         .texto>h1 {
             font-size: 20px;
             color: #6D593D;
-
-            /**/
-
+            
         }
 
         .texto>h2 {
@@ -592,7 +638,7 @@
             background-color: #fffafa7c;
             margin-bottom: 15px;
             transition: 0.5s;
-
+            
         }
 
         /*config da imagens de todos os cards*/
@@ -679,6 +725,7 @@
         /*config da div GRUPO que esta dentro da MAIN*/
 
         .grupo {
+            height: 200px;
             border-radius: 10px;
             margin-top: 5%;
             margin-bottom: 5%;
@@ -691,8 +738,9 @@
 
         .grupo h2 {
             padding: 10px;
-            font-size: 15px;
+            font-size: 10px;
             font-family: Mochiy Pop One;
+           
         }
 
         /* config do P da div GRUPO*/
@@ -718,12 +766,14 @@
         footer {
             height: auto;
             display: block;
-            background-color: #364b52;
+            background-color:#7d919a;
             border-bottom-left-radius: 15px;
             border-bottom-right-radius: 15px;
+        
+        }
 
             /*config do rodape geral da div rodape*/
-
+    
             .rodape {
                 display: flex;
                 flex-direction: column;
@@ -750,7 +800,7 @@
 
             .rodape1 p {
                 text-align: justify;
-                font-size: 9px;
+                font-size: 12px;
                 padding: 1px;
                 margin-top: 3%;
 
@@ -800,7 +850,9 @@
             /* config da imagem da div ICON*/
 
             .rodape-icon img {
-                max-width: 10%;
+                max-width: 9%;
+                margin-bottom: 4%;
+                margin-left: 3%;
 
             }
 
@@ -845,6 +897,7 @@
             .rodape3 img {
                 align-items: center;
                 max-width: 50%;
+                margin-bottom: 50%;
 
             }
 
@@ -863,6 +916,4 @@
             }
         }
 
-    }
-
-    
+  
